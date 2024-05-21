@@ -7,8 +7,12 @@ class SocketEventSender @Inject constructor(
     private val socketClient: SocketClient
 ) {
     fun sendMessage(message: String) {
-        socketClient.sendMessageToSocket(
-            MessageModel(name = GlobalValues.username, target = "all", payload = message)
-        )
+//        socketClient.sendMessageToSocket(
+//            MessageModel(
+//                from = GlobalValues.username,
+//                target = "all",
+//                payload = Payload(message = message, action = EventTypes.MESSAGE)
+//            )
+//        )
     }
 }

@@ -1,4 +1,5 @@
 package com.example.webrtcandroid.service
 
-class MessageService {
+enum class ServiceActions {
+    START, STOP
 }
