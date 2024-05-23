@@ -74,7 +74,7 @@ dependencies {
     implementation("com.mesibo.api:webrtc:1.0.5")
     implementation("org.java-websocket:Java-WebSocket:1.5.3")
 
-    //gson for handling response
+    //gson for parsing response
     implementation("com.google.code.gson:gson:2.10.1")
 
     implementation("androidx.navigation:navigation-compose:2.7.7")
@@ -82,4 +82,16 @@ dependencies {
     //hilt for dependency injection
     implementation("com.google.dagger:hilt-android:2.48")
     kapt("com.google.dagger:hilt-compiler:2.48")
+
+    // Coroutine Lifecycle Scopes
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.8.0")
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.8.0")
+
+    // Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    // OkHttp
+    implementation("com.squareup.okhttp3:okhttp:5.0.0-alpha.2")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 }
